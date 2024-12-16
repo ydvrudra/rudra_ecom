@@ -1,0 +1,7 @@
+<script>
+    // Redirect all paths to index.html for React Router to handle
+    if (location.pathname !== '/' && !location.pathname.includes('404')) {
+      location.href = '/';
+    }
+  </script>
+  

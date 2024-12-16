@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* pagination css in products.jsx */
+
+.paginationBox{
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+}
+.page-item{
+  background-color: rgb(255, 255, 255);
+  padding: 1vmax 1.5vmax;
+  border: 0.1px solid rgb(0, 0, 0,0.178);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child{
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child{
+  border-radius: 0 5px 5px 0;
+  }
+.page-link{
+  text-decoration: none;
+  font:300 0.7vmax;
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+ .page-item:hover .page-link {
+  color: rgb(43, 43, 43);
+}
+
+.pageitemActive{
+  background-color: red;
+}
+
+.pageLinkActive{
+  color: white;
+}
+
+.registerImage > input::file-selector-button {
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  width: 100%;
+  margin: 0%;
+  height: 7vh;
+  padding: 0.1vmax;
+  color: rgba(250, 19, 19, 0.623);
+  background-color:rgb(237, 236, 236);
+  transition: all 0.5s;
+  border: 0.1px solid gray;
+
+}
+
+.registerImage > input::file-selector-button:hover {
+  background-color: rgb(185, 184, 184);
+}
+
+
+.MuiStepConnector-root{
+  background-color: rgba(0,0,0,0.349);
+}
+.MuiStepConnnector-active,
+.MuiStepConnector-completed {
+  background-color: tomato;
+}
+
+.custom-header{
+  background-color: tomato;
+  color: white;
+  font-size: large;
+}
+
