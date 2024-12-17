@@ -14,8 +14,9 @@ dist-ssr
 
 # Ignore .env file in the backend
 backend/.env
+frontend/.env
 backend/node_modules/
-frontend/vite-project/node_modules/
+frontend/node_modules/
 
 # Editor directories and files
 .vscode/*
