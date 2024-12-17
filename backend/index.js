@@ -26,7 +26,7 @@ dotenv.config();
 app.use(express.json({ limit: '30mb' }));
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:5174', // Replace with your frontend URL
+    origin: 'https://rudra-ecom-papp.vercel.app', // Replace with your frontend URL
     credentials: true, // Allow cookies to be sent
   }));
   
